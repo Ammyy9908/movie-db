@@ -1,0 +1,43 @@
+.home{
+    width: 90%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
+    grid-template-areas: "movies favourites";
+    margin: 10px auto;
+    gap:25px;
+}
+
+.movie-container{
+    grid-area:movies;
+    
+
+}
+
+.movies,.favourite-cards{
+    width: 100%;
+    /* display: flex;
+    gap:14px;
+    flex-wrap: wrap; */
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
+    gap:14px;
+    overflow-y: scroll;
+    max-height: 100vh;
+}
+
+
+
+.favourites{
+    grid-area:favourites;
+    
+}
+.favourite-cards{
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.centered{
+   text-align: center;
+}
